@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 851e9b748367f4d08a3ba6a84185ccf4
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - whitePiece: {fileID: 190484, guid: 995b4dcedbdc54605918f4f112af3d71, type: 3}
+  - blackPiece: {fileID: 171040, guid: 16ef248bb55f048e8bf0d6c7c9ce9afd, type: 3}
+  - dummyPiece: {fileID: 192096, guid: aec0850ce62de4b90a996f76b5f42338, type: 3}
+  - playingCanvas: {instanceID: 0}
+  - endCanvas: {instanceID: 0}
+  - currentTurnText: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

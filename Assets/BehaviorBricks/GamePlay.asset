@@ -1,0 +1,107 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34a7c8ca992f915438a96c2077353778, type: 3}
+  m_Name: GamePlay
+  m_EditorClassIdentifier: 
+  brickName: Assets/BehaviorBricks/GamePlay.asset
+  xml: "\uFEFF<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<BehaviorBricks xmlns:ref=\"urn:padaone\"
+    version=\"1.0\">\n  <BehaviorTree id=\"0\" />\n  <runtimeInfo>\n    <BehaviorTree
+    id=\"0\" guid=\"0fa4c71c75c9642f4a0531142dfc2adf\" nextId=\"12\">\n      <root>\n
+    \       <RepeatDecorator id=\"1\" />\n      </root>\n      <inputParams>\n        <inputValues>\n
+    \         <entry name=\"animationClip\" type=\"UnityEngine.AnimationClip\" isBlackboard=\"False\"
+    />\n          <entry name=\"wanderArea\" type=\"UnityEngine.GameObject\" isBlackboard=\"False\"
+    />\n          <entry name=\"seconds\" type=\"System.Single\" isBlackboard=\"False\"
+    value=\"0\" />\n          <entry name=\"seconds4\" type=\"System.Single\" isBlackboard=\"False\"
+    value=\"0\" />\n          <entry name=\"animationClip4\" type=\"UnityEngine.AnimationClip\"
+    isBlackboard=\"False\" />\n          <entry name=\"animationClip3\" type=\"UnityEngine.AnimationClip\"
+    isBlackboard=\"False\" />\n          <entry name=\"3\" type=\"System.Single\"
+    isBlackboard=\"False\" value=\"0\" />\n          <entry name=\"seconds3\" type=\"System.Single\"
+    isBlackboard=\"False\" value=\"0\" />\n          <entry name=\"animationClip2\"
+    type=\"UnityEngine.AnimationClip\" isBlackboard=\"False\" />\n          <entry
+    name=\"seconds2\" type=\"System.Single\" isBlackboard=\"False\" value=\"0\" />\n
+    \       </inputValues>\n      </inputParams>\n      <outputParams />\n      <localParams
+    />\n    </BehaviorTree>\n    <RepeatDecorator id=\"1\" loops=\"-1\" policy=\"ContinueWhenChildFails\">\n
+    \     <child>\n        <SequenceNode id=\"2\" />\n      </child>\n      <inputParams
+    />\n      <outputParams />\n      <localParams />\n    </RepeatDecorator>\n    <SequenceNode
+    id=\"2\">\n      <children>\n        <elem>\n          <SubbehaviorNode id=\"7\"
+    />\n        </elem>\n        <elem>\n          <SubbehaviorNode id=\"8\" />\n
+    \       </elem>\n        <elem>\n          <SubbehaviorNode id=\"10\" />\n        </elem>\n
+    \       <elem>\n          <SubbehaviorNode id=\"11\" />\n        </elem>\n      </children>\n
+    \     <inputParams />\n      <outputParams />\n      <localParams />\n    </SequenceNode>\n
+    \   <SubbehaviorNode id=\"7\">\n      <_guid>86158ad0c6eb04d5d84c7a0eb8adb4c3</_guid>\n
+    \     <inputParams>\n        <inputValues>\n          <entry name=\"wanderArea\"
+    type=\"UnityEngine.GameObject\" isBlackboard=\"True\" blackboard=\"wanderArea\"
+    />\n        </inputValues>\n      </inputParams>\n      <outputParams />\n      <localParams
+    />\n    </SubbehaviorNode>\n    <SubbehaviorNode id=\"8\">\n      <_guid>d6071b87872f54809baedeaf35ea3ea7</_guid>\n
+    \     <inputParams>\n        <inputValues>\n          <entry name=\"animationClip\"
+    type=\"UnityEngine.AnimationClip\" isBlackboard=\"True\" blackboard=\"animationClip2\"
+    />\n          <entry name=\"50\" type=\"System.Single\" isBlackboard=\"True\"
+    blackboard=\"seconds2\" />\n          <entry name=\"seconds\" type=\"System.Single\"
+    isBlackboard=\"False\" value=\"0\" />\n        </inputValues>\n      </inputParams>\n
+    \     <outputParams />\n      <localParams />\n    </SubbehaviorNode>\n    <SubbehaviorNode
+    id=\"10\">\n      <_guid>586f254e97248420eba24ac36bc232fe</_guid>\n      <inputParams>\n
+    \       <inputValues>\n          <entry name=\"animationClip\" type=\"UnityEngine.AnimationClip\"
+    isBlackboard=\"True\" blackboard=\"animationClip3\" />\n          <entry name=\"seconds\"
+    type=\"System.Single\" isBlackboard=\"True\" blackboard=\"seconds3\" />\n        </inputValues>\n
+    \     </inputParams>\n      <outputParams />\n      <localParams />\n    </SubbehaviorNode>\n
+    \   <SubbehaviorNode id=\"11\">\n      <_guid>479f445a91c424cfb84cd134097f6209</_guid>\n
+    \     <inputParams>\n        <inputValues>\n          <entry name=\"seconds\"
+    type=\"System.Single\" isBlackboard=\"True\" blackboard=\"seconds4\" />\n          <entry
+    name=\"animationClip\" type=\"UnityEngine.AnimationClip\" isBlackboard=\"True\"
+    blackboard=\"animationClip4\" />\n          <entry name=\"waitUntilFinish\" type=\"System.Boolean\"
+    isBlackboard=\"False\" value=\"False\" />\n        </inputValues>\n      </inputParams>\n
+    \     <outputParams />\n      <localParams />\n    </SubbehaviorNode>\n  </runtimeInfo>\n
+    \ <editorInfo>\n    <BehaviorTree id=\"0\" _name=\"GamePlay\" _description=\"\"
+    _removeIfClosed=\"False\">\n      <_rootList>\n        <elem>\n          <RepeatDecorator
+    id=\"1\" />\n        </elem>\n        <elem>\n          <SequenceNode id=\"2\"
+    />\n        </elem>\n        <elem>\n          <SubbehaviorNode id=\"7\" />\n
+    \       </elem>\n        <elem>\n          <SubbehaviorNode id=\"8\" />\n        </elem>\n
+    \       <elem>\n          <SubbehaviorNode id=\"10\" />\n        </elem>\n        <elem>\n
+    \         <SubbehaviorNode id=\"11\" />\n        </elem>\n      </_rootList>\n
+    \     <_nodes>\n        <nodes>\n          <RepeatDecorator id=\"1\" />\n          <SequenceNode
+    id=\"2\" />\n          <SubbehaviorNode id=\"7\" />\n          <SubbehaviorNode
+    id=\"8\" />\n          <SubbehaviorNode id=\"10\" />\n          <SubbehaviorNode
+    id=\"11\" />\n        </nodes>\n      </_nodes>\n    </BehaviorTree>\n    <RepeatDecorator
+    id=\"1\">\n      <_data>\n        <data breakpoint=\"0\" selected=\"False\" position=\"475
+    191\" name=\"Repeat\" description=\"Repeats the execution of its child node\"
+    cardinality=\"1\" hasParent=\"False\">\n          <BehaviorTree id=\"0\" />\n
+    \         <RepeatDecorator id=\"1\" />\n        </data>\n      </_data>\n    </RepeatDecorator>\n
+    \   <SequenceNode id=\"2\">\n      <_data>\n        <data breakpoint=\"0\" selected=\"False\"
+    position=\"458 308\" name=\"Sequence\" description=\"Executes all its children
+    in sequence until all of them are successful\" cardinality=\"-1\" hasParent=\"True\">\n
+    \         <BehaviorTree id=\"0\" />\n          <SequenceNode id=\"2\" />\n          <RepeatDecorator
+    id=\"1\" />\n        </data>\n      </_data>\n    </SequenceNode>\n    <SubbehaviorNode
+    id=\"7\">\n      <_data>\n        <data breakpoint=\"0\" selected=\"False\" position=\"369
+    440\" name=\"Wander\" description=\"\" cardinality=\"-1\" hasParent=\"True\">\n
+    \         <BehaviorTree id=\"0\" />\n          <SubbehaviorNode id=\"7\" />\n
+    \         <SequenceNode id=\"2\" />\n        </data>\n      </_data>\n    </SubbehaviorNode>\n
+    \   <SubbehaviorNode id=\"8\">\n      <_data>\n        <data breakpoint=\"0\"
+    selected=\"False\" position=\"531 445\" name=\"Dance\" description=\"\" cardinality=\"-1\"
+    hasParent=\"True\">\n          <BehaviorTree id=\"0\" />\n          <SubbehaviorNode
+    id=\"8\" />\n          <SequenceNode id=\"2\" />\n        </data>\n      </_data>\n
+    \   </SubbehaviorNode>\n    <SubbehaviorNode id=\"10\">\n      <_data>\n        <data
+    breakpoint=\"0\" selected=\"False\" position=\"714 456\" name=\"Spin\" description=\"\"
+    cardinality=\"-1\" hasParent=\"True\">\n          <BehaviorTree id=\"0\" />\n
+    \         <SubbehaviorNode id=\"10\" />\n          <SequenceNode id=\"2\" />\n
+    \       </data>\n      </_data>\n    </SubbehaviorNode>\n    <SubbehaviorNode
+    id=\"11\">\n      <_data>\n        <data breakpoint=\"0\" selected=\"True\" position=\"880
+    357\" name=\"Cheer\" description=\"\" cardinality=\"-1\" hasParent=\"True\">\n
+    \         <BehaviorTree id=\"0\" />\n          <SubbehaviorNode id=\"11\" />\n
+    \         <SequenceNode id=\"2\" />\n        </data>\n      </_data>\n    </SubbehaviorNode>\n
+    \ </editorInfo>\n</BehaviorBricks>"
+  zoom: 1
+  subslist:
+  - {fileID: 11400000, guid: 86158ad0c6eb04d5d84c7a0eb8adb4c3, type: 2}
+  - {fileID: 11400000, guid: d6071b87872f54809baedeaf35ea3ea7, type: 2}
+  - {fileID: 11400000, guid: 586f254e97248420eba24ac36bc232fe, type: 2}
+  - {fileID: 11400000, guid: 479f445a91c424cfb84cd134097f6209, type: 2}
+  _guid: 0fa4c71c75c9642f4a0531142dfc2adf

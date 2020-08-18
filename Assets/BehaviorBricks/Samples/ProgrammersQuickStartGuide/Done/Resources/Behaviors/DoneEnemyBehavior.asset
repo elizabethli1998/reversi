@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34a7c8ca992f915438a96c2077353778, type: 3}
+  m_Name: DoneEnemyBehavior
+  m_EditorClassIdentifier: 
+  brickName: Assets/BehaviorBricks/Samples/ProgrammersQuickStartGuide/Done/Resources/Behaviors/DoneEnemyBehavior.asset
+  xml: "\uFEFF<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<BehaviorBricks xmlns:ref=\"urn:padaone\"
+    version=\"1.0\">\n  <BehaviorTree id=\"0\" />\n  <runtimeInfo>\n    <BehaviorTree
+    id=\"0\" guid=\"cefec543fe1d8774aa0b18d5ab374a84\" nextId=\"11\">\n      <inputParams>\n
+    \       <inputValues>\n          <entry name=\"player\" type=\"UnityEngine.GameObject\"
+    isBlackboard=\"False\" />\n          <entry name=\"shootPoint\" type=\"UnityEngine.Transform\"
+    isBlackboard=\"False\" />\n          <entry name=\"bullet\" type=\"UnityEngine.GameObject\"
+    isBlackboard=\"False\" />\n          <entry name=\"wanderArea\" type=\"UnityEngine.GameObject\"
+    isBlackboard=\"False\" />\n        </inputValues>\n      </inputParams>\n      <outputParams
+    />\n      <localParams />\n    </BehaviorTree>\n  </runtimeInfo>\n  <editorInfo>\n
+    \   <BehaviorTree id=\"0\" _name=\"ProgrammersStartGuide/DoneEnemyBehavior\" _description=\"Sleeps
+    if it's night.&#xA;Otherwise tries to find a Game Object wandering around an area.
+    Then, chases it and shoots it if it's close to the own Game Object.&#xA;\" _removeIfClosed=\"False\">\n
+    \     <_rootList />\n      <_nodes>\n        <nodes>\n          <SubbehaviorNode
+    id=\"3\" />\n        </nodes>\n      </_nodes>\n      <_selectedNode>\n        <ActionNode
+    id=\"9\" />\n      </_selectedNode>\n    </BehaviorTree>\n  </editorInfo>\n  <runtimeInfo>\n
+    \   <SubbehaviorNode id=\"3\">\n      <_guid>8adfddffa70852a45ba1b64354494e3c</_guid>\n
+    \     <inputParams>\n        <inputValues>\n          <entry name=\"wanderArea\"
+    type=\"UnityEngine.GameObject\" isBlackboard=\"True\" blackboard=\"wanderArea\"
+    />\n        </inputValues>\n      </inputParams>\n      <outputParams />\n      <localParams
+    />\n    </SubbehaviorNode>\n    <ActionNode id=\"9\" action=\"Samples/ProgQuickStartGuide/SleepForever\">\n
+    \     <inputParams />\n      <outputParams />\n      <localParams />\n    </ActionNode>\n
+    \ </runtimeInfo>\n  <editorInfo>\n    <SubbehaviorNode id=\"3\" _name=\"DoneWander\">\n
+    \     <_data>\n        <data breakpoint=\"0\" selected=\"False\" position=\"790.2049
+    407.464\" name=\"QuickStartGuide/DoneWander\" description=\"DoneWander\" cardinality=\"0\"
+    hasParent=\"True\">\n          <BehaviorTree id=\"0\" />\n          <SubbehaviorNode
+    id=\"3\" />\n          <ConditionEvalNode id=\"4\" />\n        </data>\n      </_data>\n
+    \   </SubbehaviorNode>\n    <ActionNode id=\"9\">\n      <_data>\n        <data
+    breakpoint=\"0\" selected=\"True\" position=\"89.70535 417.214\" name=\"Samples/ProgQuickStartGuide/SleepForever\"
+    description=\"Low-cost infinite action that never ends. It does not consume CPU
+    at all.\" cardinality=\"0\" hasParent=\"True\">\n          <BehaviorTree id=\"0\"
+    />\n          <ActionNode id=\"9\" />\n          <ConditionEvalNode id=\"10\"
+    />\n        </data>\n      </_data>\n    </ActionNode>\n  </editorInfo>\n  <runtimeInfo>\n
+    \   <ConditionEvalNode id=\"4\" policy=\"WAIT_UNTIL_FALSE_AND_FAIL\" name=\"AlwaysTrue\">\n
+    \     <inputParams />\n      <outputParams />\n      <localParams />\n    </ConditionEvalNode>\n
+    \   <ConditionEvalNode id=\"10\" policy=\"WAIT_UNTIL_TRUE_AND_COMPLETE\" name=\"Samples/ProgQuickStartGuide/IsNight\">\n
+    \     <inputParams />\n      <outputParams />\n      <localParams />\n    </ConditionEvalNode>\n
+    \ </runtimeInfo>\n  <editorInfo>\n    <ConditionEvalNode id=\"4\">\n      <_data>\n
+    \       <data breakpoint=\"0\" selected=\"False\" position=\"790.2049 341.464\"
+    name=\"AlwaysTrue\" description=\"\" cardinality=\"0\" hasParent=\"False\">\n
+    \         <BehaviorTree id=\"4\" />\n        </data>\n      </_data>\n    </ConditionEvalNode>\n
+    \   <ConditionEvalNode id=\"10\">\n      <_data>\n        <data breakpoint=\"0\"
+    selected=\"False\" position=\"89.70535 351.214\" name=\"Samples/ProgQuickStartGuide/IsNight\"
+    description=\"Checks whether it is night. It searches for the first light labeld
+    with the 'MainLight' tag, and looks for its DayNightCycle script, returning theinformed
+    state. If no light is found, false is returned.\" cardinality=\"0\" hasParent=\"False\">\n
+    \         <BehaviorTree id=\"10\" />\n        </data>\n      </_data>\n    </ConditionEvalNode>\n
+    \ </editorInfo>\n  <runtimeInfo>\n    <BehaviorTree id=\"4\" nextId=\"1\">\n      <inputParams
+    />\n      <outputParams />\n      <localParams />\n    </BehaviorTree>\n    <BehaviorTree
+    id=\"10\" nextId=\"1\">\n      <inputParams />\n      <outputParams />\n      <localParams
+    />\n    </BehaviorTree>\n  </runtimeInfo>\n  <editorInfo>\n    <BehaviorTree id=\"4\"
+    _removeIfClosed=\"False\">\n      <_rootList />\n      <_nodes>\n        <nodes
+    />\n      </_nodes>\n    </BehaviorTree>\n    <BehaviorTree id=\"10\" _removeIfClosed=\"False\">\n
+    \     <_rootList />\n      <_nodes>\n        <nodes />\n      </_nodes>\n    </BehaviorTree>\n
+    \ </editorInfo>\n</BehaviorBricks>"
+  zoom: 0.7
+  subslist:
+  - {fileID: 11400000, guid: 8adfddffa70852a45ba1b64354494e3c, type: 2}
+  _guid: cefec543fe1d8774aa0b18d5ab374a84

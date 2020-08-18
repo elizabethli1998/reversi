@@ -1,0 +1,17 @@
+﻿<Properties StartupConfiguration="{969F4E4D-E32E-A25B-5E76-7A1878F9B95F}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameScript.cs">
+    <Files>
+      <File FileName="../Reversi437-master/Assets/UIHandler.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/MiniMax.cs" />
+      <File FileName="Assets/Scripts/GameScript.cs" Line="210" Column="1" />
+      <File FileName="Assets/Scripts/SquirtleScript.cs" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="540247bf-9aa1-4b4a-94ea-e1593b8858ef" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
